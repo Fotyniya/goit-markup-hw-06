@@ -633,6 +633,10 @@ footer .social-list-link {
 }
 .modal-close-icon {
     fill: #000000;
+    transition: fill var(--transition-timing-function);
+}
+.modal-close-btn:hover .modal-close-icon {
+    fill: var(--accent-color);
 }
 /* ======== modal form ===== */
 .modal-form-title {
@@ -685,7 +689,10 @@ footer .social-list-link {
     left: 12px;
     transform: translateY(-50%);
     transition: fill var(--transition-timing-function);
-} 
+}
+.modal-form-textarea {
+    margin-bottom: 20px;
+}
 .modal-form-message {
     resize: none;
     outline: none;
